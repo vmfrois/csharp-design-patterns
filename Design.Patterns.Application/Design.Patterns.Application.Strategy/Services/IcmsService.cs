@@ -7,7 +7,7 @@ namespace Design.Patterns.Application.Strategy.Services
     {
         public double Calcular(Orcamento orcamento)
         {
-            return orcamento.Valor * 0.10;
+            return orcamento.Valor * 0.05 + 50.0;
         }
     }
 }

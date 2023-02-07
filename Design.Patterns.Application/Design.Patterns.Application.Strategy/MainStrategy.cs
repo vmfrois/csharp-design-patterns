@@ -10,11 +10,15 @@ namespace Design.Patterns.Application.Strategy
         {
             ITipoImposto iss = new IssService();
             ITipoImposto icms = new IcmsService();
-            Orcamento orcamento = new Orcamento(500.0);
+            ITipoImposto iccc = new IcccService();
+            Orcamento orcamento = new Orcamento(4000);
+
+         
 
             CalculadoraService calculadora = new CalculadoraService();
             calculadora.RealizaCalculo(orcamento, iss);
             calculadora.RealizaCalculo(orcamento, icms);
+            calculadora.RealizaCalculo(orcamento, iccc);
         }
     }
 }
