@@ -6,7 +6,7 @@ namespace Design.Patterns.Application.Strategy
 {
     public class MainStrategy
     {
-        public void BasicStrategy()
+        public void BasicStrategyImposto()
         {
             ITipoImposto iss = new IssService();
             ITipoImposto icms = new IcmsService();
@@ -20,5 +20,19 @@ namespace Design.Patterns.Application.Strategy
             calculadora.RealizaCalculo(orcamento, icms);
             calculadora.RealizaCalculo(orcamento, iccc);
         }
+
+        public void BasicStrategyInvestimento()
+        {
+            IInvestimento conservador = new ConservadorService();
+            IInvestimento moderado = new ModeradoService();
+            IInvestimento arrojado = new ArrojadoService();
+
+            ContaBancaria conta = new(1000.0);
+
+            RealizadorDeInvestimentosService relaizadorDeInvestimentos = new();
+
+            relaizadorDeInvestimentos.RealizaInvestimento(conta, arrojado);
+        }
+
     }
 }

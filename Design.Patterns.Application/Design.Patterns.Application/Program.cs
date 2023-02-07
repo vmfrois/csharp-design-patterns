@@ -7,7 +7,8 @@ namespace Design.Patterns.Application
         static void Main(string[] args)
         {
             MainStrategy strategy = new MainStrategy();
-            strategy.BasicStrategy();
+            strategy.BasicStrategyImposto();
+            strategy.BasicStrategyInvestimento();
         }
     }
 }
