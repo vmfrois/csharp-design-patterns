@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Design.Patterns.Application.ChainOfResponsibility\Design.Patterns.Application.ChainOfResponsibility.csproj" />
     <ProjectReference Include="..\Design.Patterns.Application.Strategy\Design.Patterns.Application.Strategy.csproj" />
   </ItemGroup>
 

@@ -1,5 +1,4 @@
 ﻿using Design.Patterns.Application.Strategy.Models;
-using Design.Patterns.Application.Strategy.Models.Enums;
 using Design.Patterns.Application.Strategy.Services.Interfaces;
 
 namespace Design.Patterns.Application.Strategy.Services
