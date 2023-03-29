@@ -7,7 +7,7 @@ namespace Design.Patterns.Application.ChainOfResponsibility
     {
         public void BasicChainOfResponsibility()
         {
-            Orcamento orcamento = new Orcamento(100);
+            Orcamento orcamento = new Orcamento(1000);
             orcamento.AdicionaItem(new Item("Caneta",500));
             orcamento.AdicionaItem(new Item("Lapis", 500));
             orcamento.AdicionaItem(new Item("Geladeira", 500));
@@ -20,5 +20,16 @@ namespace Design.Patterns.Application.ChainOfResponsibility
             double desconto = calculadora.Calcula(orcamento);
             Console.WriteLine(desconto);
         }
+
+        public void IntermediaryChainOfResponsibility()
+        {
+
+        }
+
+        public void AdvancedChainOfResponsibility()
+        {
+
+        }
+
     }
 }
